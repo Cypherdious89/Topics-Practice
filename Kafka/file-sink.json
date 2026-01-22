@@ -1,0 +1,11 @@
+{
+    "name": "local-file-sink",
+    "config": {
+        "connector.class": "org.apache.kafka.connect.file.FileStreamSinkConnector",
+        "tasks.max": "1",
+        "topics": "safe-topic",
+        "file": "/tmp/output.txt",
+        "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+        "value.converter.schemas.enable": "false"
+    }
+}
